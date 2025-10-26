@@ -1,0 +1,66 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../img/BAR.jpg ') center/cover no-repeat fixed;
+    position: relative;
+    height: 100vh;
+}
+
+/* Overlay gelap di belakang form */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.login-container {
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.login-container h2 {
+    font-weight: 700;
+    color: #59AC77;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-control:focus {
+    border-color: #59AC77;
+    box-shadow: 0 0 0 0.2rem rgba(0, 171, 6, 0.25);
+}
+
+.btn-login {
+    background-color: #59AC77;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-login:hover {
+    background-color: #3a704e;
+}
+
+.text-small {
+    font-size: 0.9rem;
+}
+
+a {
+    color: #3a704e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
