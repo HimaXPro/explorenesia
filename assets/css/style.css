@@ -1,0 +1,124 @@
+:root {
+    --primary: #3A6F43;
+    --accent: #59AC77;
+    --text-light: #f7fafc;
+    --text-dark: #1F2937;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary);
+}
+
+.navbar .nav-link {
+    color: #f7fafc !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: var(--accent) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+        url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBNkIMirDwLvzFUaHaDxtzU_nUuhrSVFoK38qCwhSPKdj6zST3kK3GDH88Bh54dIEekiImZdkBPhtttuKiuorYl5kNKBTqGPuucANfge11FYt7-KennF8hJxrmjusaXq8l15X2Ow7M6CE-Jov2YU089hO_nqcU_Q5ODLTvy8_eCL64_2D88Yofu4cw_VSaBz4_UC7ighoPtawpxsWgTfvfEq6EpGmcJ34A1ypGwrPX39Bu-aDtjtBtTU8cE-7_VO_tmwYD2NcGFlMw");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.hero-section h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.btn-accent:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Features */
+.feature-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(89, 172, 119, 0.2);
+    color: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 28px;
+}
+
+/* About */
+.about-section {
+    background-color: #f9fafb;
+    padding: 5rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: var(--accent);
+}
